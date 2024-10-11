@@ -22,7 +22,7 @@ To run this project, you need:
 ## Installation Instructions
 Step 1: Clone the repository
 ```
-git clone https://github.com/yourusername/profile-card-project.git
+git clone https://github.com/Hrk84ya/profile-card-project.git
 ```
 Step 2: Navigate to the project directory
 ```
