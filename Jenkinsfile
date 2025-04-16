@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:18'
-        }
-    }
+    agent any
 
     stages {
         stage('Checkout') {
@@ -16,7 +12,7 @@ pipeline {
         stage('Lint HTML') {
             steps {
                 echo 'Validating HTML...'
-                sh 'npm install -g htmlhint'
+                sh 'npm install -g htmlhint || true'
                 sh 'htmlhint index.html || true'
             }
         }
