@@ -28,11 +28,11 @@ Step 2: Navigate to the project directory
 ```
 cd profile-card-project
 ```
-Step 3: Open the profile.html file in a web browser
-You can simply double-click on profile.html to open it in your default browser, or run a local server if needed.
+Step 3: Open the index.html file in a web browser
+You can simply double-click on index.html to open it in your default browser, or run a local server if needed.
 
 Step 4: (Optional) Customize the profile details
-Edit the profile.html and profile.css files to modify the content, colors, or styles to fit your needs.
+Edit the index.html and profile.css files to modify the content, colors, or styles to fit your needs.
 
 ## Usage Guide
 This profile card can be used on personal websites, portfolios, or as a digital business card. It includes:
@@ -40,7 +40,7 @@ This profile card can be used on personal websites, portfolios, or as a digital 
 - Contact Details: Email, phone number, and location details are provided.
 - Social Media Links: Buttons to LinkedIn, Twitter, Instagram, and GitHub with hover pulse animation.
 
-### To update the contact details, modify the following sections in the profile.html file:
+### To update the contact details, modify the following sections in the index.html file:
 ```
 <ul>
   <li><i class="bx bx-envelope"></i> your-email@example.com</li>
