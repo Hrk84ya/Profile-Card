@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'node:18'
+        }
+    }
 
     stages {
         stage('Checkout') {
@@ -12,8 +16,7 @@ pipeline {
         stage('Lint HTML') {
             steps {
                 echo 'Validating HTML...'
-                // Optional: Install and run htmlhint or any linter
-                sh 'npm install -g htmlhint || true'
+                sh 'npm install -g htmlhint'
                 sh 'htmlhint index.html || true'
             }
         }
@@ -21,9 +24,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying the project...'
-                // Example: Copy to a directory or use scp/ftp/deploy tool
-                sh 'mkdir -p /var/www/html/myproject'
-                sh 'cp -r * /var/www/html/myproject/'
+                sh 'mkdir -p $HOME/html-deploy/myproject'
+                sh 'cp -r * $HOME/html-deploy/myproject/'
             }
         }
     }
