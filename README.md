@@ -2,6 +2,8 @@
 ## Project Overview
 This Profile Card Project is a sleek, interactive, and responsive web-based profile card designed to showcase personal information and social media links. The project features hover effects, smooth transitions, and a modern design using CSS animations. It’s perfect for integrating into personal websites, portfolios, or digital resumes.
 
+### Check out the live demo: [Profile-Card](https://hrk84ya.github.io/Profile-Card/)
+
 ## Key Features:
 - Interactive profile card with hover effects
 - Displays key contact details and social media links
