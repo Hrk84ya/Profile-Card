@@ -5,42 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="profile.css" />
     <title>Profile Card</title>
-    <link
-    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-    rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
     <div class="profile-card">
-        <div class="image">
-            <img src="img/Profile.jpg" alt="Profile Picture" class="profile-img" />
-        </div>
+        <div class="card-inner">
+            <div class="card-header"></div>
 
-        <div class="text-data">
-            <span class="name">Harsh Kumar</span>
-            <span class="role">Student</span>
-        </div>
-        <div class="details">
-            <ul>
-                <li><i class="bx bx-envelope"></i> hrk84ya@gmail.com</li>
-                <li><i class="bx bx-phone"></i> +91 8986001950</li>
-                <li><i class="bx bx-link"></i> <a href="https://hrk84ya.netlify.app/" target="_blank" rel="noopener noreferrer" class="website-link">hrk84ya.netlify.app</a></li>
-                <li><i class="bx bx-map"></i> Gaya, Bihar</li>
-            </ul>
-        </div>
-        <div class="media-buttons">
-            <a href="https://www.linkedin.com/in/hrk84ya" style="background: #4267b2" class="link" target="_blank" rel="noopener noreferrer">
-                <i class="bx bxl-linkedin"></i>
-            </a>
-            <a href="https://twitter.com/hrk84ya" style="background: #1da1f2" class="link" target="_blank" rel="noopener noreferrer">
-                <i class="bx bxl-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/hrk84ya" style="background: #e1306c" class="link" target="_blank" rel="noopener noreferrer">
-                <i class="bx bxl-instagram"></i>
-            </a>
-            <a href="https://github.com/Hrk84ya" style="background: #0b0000" class="link" target="_blank" rel="noopener noreferrer">
-                <i class="bx bxl-github"></i>
-            </a>
+            <div class="image">
+                <div class="image-ring">
+                    <img src="img/Profile.jpg" alt="Profile Picture" class="profile-img" />
+                </div>
+            </div>
+
+            <div class="text-data">
+                <span class="name">Harsh Kumar</span>
+                <span class="role">Student</span>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1.2k</span>
+                    <span class="stat-label">Followers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">340</span>
+                    <span class="stat-label">Following</span>
+                </div>
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li>
+                        <span class="accent-dot"></span>
+                        <i class="bx bx-envelope"></i>
+                        <span>[email]</span>
+                    </li>
+                    <li>
+                        <span class="accent-dot"></span>
+                        <i class="bx bx-phone"></i>
+                        <span>[phone_number]</span>
+                    </li>
+                    <li>
+                        <span class="accent-dot"></span>
+                        <i class="bx bx-link"></i>
+                        <a href="https://hrk84ya.netlify.app/" target="_blank" rel="noopener noreferrer" class="website-link">hrk84ya.netlify.app</a>
+                    </li>
+                    <li>
+                        <span class="accent-dot"></span>
+                        <i class="bx bx-map"></i>
+                        <span>Gaya, Bihar</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="media-buttons">
+                <a href="https://www.linkedin.com/in/hrk84ya" class="link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/hrk84ya" class="link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/hrk84ya" class="link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="https://github.com/Hrk84ya" class="link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="bx bxl-github"></i>
+                </a>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">
+                    <i class="bx bx-download"></i> Download CV
+                </a>
+                <a href="mailto:[email]" class="btn btn-secondary">
+                    <i class="bx bx-message-rounded-dots"></i> Contact
+                </a>
+            </div>
         </div>
     </div>
 </body>
