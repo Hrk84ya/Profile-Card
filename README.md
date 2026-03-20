@@ -1,65 +1,89 @@
 # Profile Card Project
+
 ## Project Overview
-This Profile Card Project is a sleek, interactive, and responsive web-based profile card designed to showcase personal information and social media links. The project features hover effects, smooth transitions, and a modern design using CSS animations. It’s perfect for integrating into personal websites, portfolios, or digital resumes.
+A premium, dark-themed profile card built with modern CSS. Features an animated gradient border, frosted glass effect, and a warm amber/gold color scheme. Designed for personal websites, portfolios, or digital resumes.
 
 ### Check out the live demo: [Profile-Card](https://hrk84ya.github.io/Profile-Card/)
 
-## Key Features:
-- Interactive profile card with hover effects
-- Displays key contact details and social media links
-- Responsive design for mobile and desktop
-- CSS animations for smooth transitions and hover effects
-- Customizable with variables for colors, fonts, and layout
+## Key Features
+- Dark theme with deep `#0f0f1a` background and subtle radial glows
+- Animated rotating conic-gradient border on the card and profile image
+- Frosted glassmorphism card with backdrop blur and inner shadows
+- Warm amber/gold accent palette (`#f59e0b`, `#d97706`, `#fbbf24`)
+- Stats row displaying Projects, Followers, and Following counts
+- Monochrome social icons with glow-on-hover effect
+- Accent dots and divider lines on contact details
+- Download CV and Contact call-to-action buttons
+- Playfair Display serif font for the name, Inter for body text
+- Uppercase letter-spaced role label
+- Fully responsive for mobile and desktop
 
 ## Technical Requirements
-To run this project, you need:
+- A modern web browser (Chrome, Edge, Safari recommended for full `@property` support)
+- Internet connection for loading external libraries
 
-- A modern web browser (Google Chrome, Firefox, Safari, etc.)
-- Internet connection for loading external libraries like Boxicons and Google Fonts
+## External Dependencies
+- [Boxicons](https://boxicons.com/) — icons
+- [Google Fonts](https://fonts.google.com/) — Inter and Playfair Display
 
-## External Dependencies:
-- Boxicons for icons
-- Google Fonts - Poppins for typography
+## Installation
 
-## Installation Instructions
-Step 1: Clone the repository
-```
+1. Clone the repository
+```bash
 git clone https://github.com/Hrk84ya/profile-card-project.git
 ```
-Step 2: Navigate to the project directory
-```
+
+2. Navigate to the project directory
+```bash
 cd profile-card-project
 ```
-Step 3: Open the index.html file in a web browser
-You can simply double-click on index.html to open it in your default browser, or run a local server if needed.
 
-Step 4: (Optional) Customize the profile details
-Edit the index.html and profile.css files to modify the content, colors, or styles to fit your needs.
+3. Open `index.html` in a web browser
 
-## Usage Guide
-This profile card can be used on personal websites, portfolios, or as a digital business card. It includes:
+4. (Optional) Customize the profile details by editing `index.html` and the CSS variables in `profile.css`
 
-- Contact Details: Email, phone number, and location details are provided.
-- Social Media Links: Buttons to LinkedIn, Twitter, Instagram, and GitHub with hover pulse animation.
+## Customization
 
-### To update the contact details, modify the following sections in the index.html file:
+### Color Scheme
+All colors are controlled via CSS custom properties in `profile.css`:
+```css
+:root {
+  --primary: #f59e0b;
+  --secondary: #d97706;
+  --accent: #fbbf24;
+  --bg-dark: #0f0f1a;
+  --bg-card: rgba(20, 20, 30, 0.7);
+}
 ```
-<ul>
-  <li><i class="bx bx-envelope"></i> your-email@example.com</li>
-  <li><i class="bx bx-phone"></i> +91 1234567890</li>
-  <li><i class="bx bx-map"></i> Your Location</li>
-</ul>
+Change these values to switch the entire palette in one place.
+
+### Contact Details
+Update the `<li>` items inside the `.details` section in `index.html`:
+```html
+<li>
+    <span class="accent-dot"></span>
+    <i class="bx bx-envelope"></i>
+    <span>your-email@example.com</span>
+</li>
 ```
-You can also replace the img/Profile.jpg image with your own profile picture.
+
+### Profile Image
+Replace `img/Profile.jpg` with your own photo.
+
+### Stats
+Edit the numbers and labels in the `.stats-row` section of `index.html`.
+
+## Browser Support
+The animated gradient border uses the CSS `@property` rule, which is supported in Chrome, Edge, and Safari. Firefox will gracefully degrade to a static gradient.
 
 ## Contributing
-Contributions are welcome! If you'd like to improve the project or add new features:
+Contributions are welcome!
 
-- Fork the repository.
-- Create a new branch (git checkout -b feature-name).
-- Make your changes and commit (git commit -m "Add feature or fix bug").
-- Push to the branch (git push origin feature-name).
-- Open a pull request.
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Make your changes and commit (`git commit -m "Add feature or fix bug"`)
+4. Push to the branch (`git push origin feature-name`)
+5. Open a pull request
 
 ## Reporting Bugs or Issues
 To report a bug, request a feature, or suggest improvements, please open an issue.
